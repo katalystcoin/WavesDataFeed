@@ -10,8 +10,8 @@ import scala.collection.mutable.Queue
 
 class Synchronizer(nodeApi: NodeApiWrapper, uetx: UnconfirmedETX, timeseries: TimeSeries, router: ActorRef, matchers: List[String]) extends Actor with Logging {
 
-  val FirstMainnetBlock = 435196
-  val FirstTestnetBlock = 171000
+  val FirstMainnetBlock = 0
+  val FirstTestnetBlock = 0
 
   val addresses = scala.collection.mutable.SortedSet[String]()
 
